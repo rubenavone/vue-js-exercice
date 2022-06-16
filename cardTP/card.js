@@ -3,7 +3,7 @@ Vue.createApp({
         let name = "Jaqueline";
         return {
             profilUser: {
-                img: "https://this-person-does-not-exist.com/img/avatar-6b83cca55c698f2be8031d9d3db5a99f.jpg",
+                img: "https://this-person-does-not-exist.com/static/images/fake-3.jpg",
                 nameInObj: name,
                 age: "43 ",
                 luckyNumber: Math.round(Math.random() * 100),

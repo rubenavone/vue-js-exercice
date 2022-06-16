@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Get the latest version of vue js -->
+
+<body>
+
+    <section id="app">
+        <article class="counter">
+            <button v-on:click="increment(1)">
+                + 1
+            </button>
+            <button v-on:click="increment(5)"  >
+                + 5
+            </button>
+            <p>le nombre: {{count}} {{message}}</p>
+          
+        </article>
+    </section>
+    
+    <script src="https://unpkg.com/vue@3" type="application/javascript"></script>
+
+    <script src="count.js" type="application/javascript"></script>
+</body>
+
+</html>

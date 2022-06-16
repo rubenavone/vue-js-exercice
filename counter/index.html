@@ -13,19 +13,20 @@
 <body>
 
     <section id="app">
-        <article class="card">
-            <img :src="profileUser.img" alt="">
-            <input :placeholder="profileUser.inputVal" type="text">
-            <h2>Name: {{profileUser.nameInObj}} </h2>
-            <p>Age: {{profileUser.age}} </p>
-            <p>Age dans 10 ans: {{ageMoreTen()}} </p>
-            <p>Lucky Number: {{profileUser.luckyNumber}}</p>
+        <article class="counter">
+            <button v-on:click="decrement()">
+                -
+            </button>
+            <p>le nombre: {{count}}</p>
+            <button v-on:click="increment()">
+                +
+            </button>
         </article>
     </section>
 
     <script src="https://unpkg.com/vue@3" type="application/javascript"></script>
 
-    <script src="card.js" type="application/javascript"></script>
+    <script src="count.js" type="application/javascript"></script>
 </body>
 
 </html>

@@ -14,11 +14,11 @@
 
     <section id="app">
         <article class="counter">
-            <button v-on:click="decrement()">
+            <button v-on:click="decrement(this.incrementValue)">
                 -
             </button>
             <p>le nombre: {{count}}</p>
-            <button v-on:click="increment()">
+            <button v-on:click="increment(this.incrementValue)" >
                 +
             </button>
         </article>

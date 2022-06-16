@@ -2,14 +2,17 @@ Vue.createApp({
     data() {
         return {
             count: 0,
+            incrementValue: 10
         };
     },
     methods: {
-        increment(){
-            this.count += 1;
+        increment(qt){
+            console.log(this.count)
+            console.log(typeof qt)
+            this.count += qt;
         },
-        decrement(){
-            this.count -= 1;
+        decrement(qt){
+            this.count -= qt;
         },
     },
 }).mount("#app")

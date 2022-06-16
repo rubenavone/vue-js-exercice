@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<!-- Get the latest version of vue js -->
+
+<body id="app">
+
+    <section>
+        <article>
+            <input v-on:input="inputChange($event)" v-on:click.right="message()" type="text">
+            <p>{{text}}</p>
+        </article>
+
+    </section>
+
+    <script src="https://unpkg.com/vue@3" type="application/javascript"></script>
+
+    <script src="event.js" type="application/javascript"></script>
+</body>
+
+</html>

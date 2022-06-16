@@ -13,5 +13,6 @@ validationButtonSelector.addEventListener("click", function(){
 function createNewTask(){
     let newTask = document.createElement("li");
     newTask.textContent = taskInputSelector.value;
-    unorderedSelector.append(newTask);
+    // unorderedSelector.append(newTask);
+    unorderedSelector.appendChild(newTask);
 }

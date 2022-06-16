@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO vue</title>
+</head>
+<!-- Get the latest version of vue js -->
+
+<body id="app">
+    <input v-model="valeurDeInput" type="text" name="" id="">
+    <button v-on:click="ajouterTask">Valider</button>
+    <ul>
+        <li v-for="uneTask in tasks">{{uneTask}}</li>
+    </ul>
+
+    <script src="https://unpkg.com/vue@3" type="application/javascript"></script>
+
+    <script type="application/javascript">
+        Vue.createApp({
+            data() {
+                return {
+                    tasks: [],
+                    valeurDeInput: '',
+                };
+            },
+            methods: {
+                ajouterTask() {
+                    this.tasks.push(this.valeurDeInput);
+                    this.valeurDeInput = "";
+                },
+            },
+        }).mount("#app")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<!-- Get the latest version of vue js -->
+
+<body id="app">
+
+    <section>
+        <article>
+            <h2>{{books[0].title}}</h2>
+            <img v-bind:src="books[0].img" alt="" srcset="">
+            <p>{{books[0].description}}</p>
+            <p>{{books[0].date}}</p>
+            <input v-model="text" type="text">
+            <p>{{text}}</p>
+        </article>
+        <article>
+            
+        </article>
+    </section>
+
+    <script src="https://unpkg.com/vue@3" type="application/javascript"></script>
+
+    <script src="v-html.js" type="application/javascript"></script>
+</body>
+
+</html>

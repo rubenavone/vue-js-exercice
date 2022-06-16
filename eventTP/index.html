@@ -8,6 +8,44 @@
     <title>variable</title>
 </head>
 <!-- Get the latest version of vue js -->
+<style>
+    section {
+        width: 250px;
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        min-height: 200px;
+    }
+
+    section article {
+        text-align: center;
+    }
+
+    section article input {
+        border-radius: 50px;
+        border: none;
+        background: #e0e0e0;
+        box-shadow: inset 20px 20px 60px #bebebe,
+            inset -20px -20px 60px #ffffff;
+    }
+
+    section article button {
+        border-radius: 50px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+            background-color: #0d6efd;
+            width: 75px;
+            height: 40px;
+            border: none;
+    }
+</style>
 
 <body id="app">
 
@@ -17,7 +55,7 @@
             <input v-on:input="inputChange($event, true)" @focusout="clear()" type="text">
             <p>{{text}}</p>
 
-            <input  @keyup.esc="inputChange($event, false)" @focusout="clear()" type="text">
+            <input @keyup.esc="inputChange($event, false)" @focusout="clear()" type="text">
 
             <p>{{secondText}}</p>
 
